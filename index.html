@@ -35,27 +35,33 @@
         main {
             padding: 2em;
             min-height: 800px;
-			.denkistr,.kanta1,.UDX1,.radio1{
+			
+			.denkistr,.kanta1,.UDX1,.radio1,.akioka1,.ydbs1,.amt1,.mc1,.acz1,.egg1,.kby1,.sof1,.krn1,.mf1,.sm1,.cj1{
           width: 1000px;
           margin: 50px auto;
           border:solid 1px gray;
           overflow: hidden; /* 避免長方框下面顯示不正常 */
         }
-        .denkip,.kantap,.UDXp,.radiop{
+        .denkip,.kantap,.UDXp,.radiop,.akokap,.ydbsp,.amtp,.mcp,.aczp,.eggp,.kbyp,.sofp,.krnp,.mfp,.smp,.cjp{
           width: 400px;
           float:right; 
-          padding: 40px;
+          padding: 20px;
         }
-        .denkip,.kantap,.UDXp,.radiop img{
+        .denkip img,.kantap img,.UDXp img,.radiop img,.akokap img,.ydbsp img,.amtp img,.mcp img,.aczp img,.eggp img,.kbyp img,.sofp img,.krnp img,.mfp img,.smp img,.cjp img{
           display: block;
           width:100%;
         }
-        .denkitext,.kantatext,.UDXtext,.radiotext{
+        .denkitext,.kantatext,.UDXtext,.radiotext,.akiokatext,.ydbstext,.amttext,.mctext,.acztext,.eggtext,.kbytext,.softext,.krntext,.mftext,.smtext,cjtext{
           float: left;  
           width: 430px;
           padding: 20px 20px 20px 20px;
         }
-		
+		article{
+		float:right;
+		border:100px;
+		height:1000px;
+		padding-right:300px;
+		}
         }
 
         
@@ -95,12 +101,31 @@
 		
         <section id="akihabara" style="display:none;">
             <h1>秋葉原</h1>
+			<article>
+			 <ul>
+				<p><h1><b>餐廳</b></h1></p>
+				<li><h2><a href="#krn">各種女僕咖啡廳</a></h2></li>
+				<li><h2><a href="#mf">丸五豬排</a></h2></li>
+				<li><h2><a href="#sm">肉汁麺ススム</a></h2></li>
+				<li><h2><a href="#cj">Carl’s Jr</a></h2></li>
+				
+            </ul>
+				
+			</article>
             <ul>
+				<p><h1><b>景點</b></h1></p>
                 <li><h2><a href="#denki">電器街</a></h2></li>
 				<li><h2><a href="#kanta">神田名神</a></h2></li>
 				<li><h2><a href="#UDX">秋葉原UDX</a></h2></li>
 				<li><h2><a href="#radio">秋葉原無線電會館</a></h2></li>
-				<li><h2><a href="#2k540">2k540 AKI-OKA ARTISAN</a></h2></li>
+				<li><h2><a href="#akioka">2k540 AKI-OKA ARTISAN</a></h2></li>
+				<li><h2><a href="#ydbs">Yodobashi Multimedia</a></h2></li>
+				<li><h2><a href="#amt">Animate（安利美特）</a></h2></li>
+				<li><h2><a href="#mc">MANDARAKE COMPLEX</a></h2></li>
+				<li><h2><a href="#acz">AKIBA CULTURES ZONE</a></h2></li>
+				<li><h2><a href="#egg">秋葉原扭蛋會館</a></h2></li>
+				<li><h2><a href="#kby">壽屋秋葉原館</a></h2></li>
+				<li><h2><a href="#sof">Sofmap AKIBA</a></h2></li>
             </ul>
         </section>
 		
@@ -111,8 +136,8 @@
 					</div>
 						<div class="denkitext">
 							<h1>電器街</h1>
-							<p><h3><b><font color="#a85538">聚集了家電製品、電腦、智慧型手機等，<br>以及動漫、電玩、公仔、鐵道模型等 (和女僕咖啡廳</br></font></b></h3></p>
-							<p><h3><b><font color="#21532a">「秋葉原」站下車即達</font></b></h3></p>
+							<h3><b><font color="#a85538">聚集了家電製品、電腦、智慧型手機等，<br>以及動漫、電玩、公仔、鐵道模型等 (和女僕咖啡廳</font></b></h3>
+							<h3><b><font color="#21532a">「秋葉原」站下車即達</font></b></h3>
 						</div>
 				</div>
 		</section>
@@ -124,8 +149,8 @@
 					</div>
 						<div class="kantatext">
 							<h1>神田名神</h1>
-							<p><h3><b><font color="#a85538">結良緣、保佑商業興隆、消災除厄<br>很多和動漫相關的繪馬、御守及各種周邊商品。</br></font></b></h3></p>
-							<p><h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/R1eesgGjEJUUpg859"" target="_blank">東京都千代田區外神田2-16-2</a><br>電器街口步行約7分鐘</br></font></b></h3></p>
+							<h3><b><font color="#a85538">結良緣、保佑商業興隆、消災除厄<br>很多和動漫相關的繪馬、御守及各種周邊商品。</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/R1eesgGjEJUUpg859"target="_blank">東京都千代田區外神田2-16-2</a><br>電器街口步行約7分鐘</font></b></h3>
 						</div>
 				</div>
 		</section>
@@ -137,11 +162,11 @@
 					</div>
 						<div class="UDXtext">
 							<h1>秋葉原UDX</h1>
-							<p><h3><b><font color="#a85538">餐飲店為主的商店街「AKIBA ICHI」集合有30多間店鋪。<br>從休閒咖啡廳和快餐店到日式、西式及異國風味的民族美食</br></font></b></h3></p>
-							<p><h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/FgsATKauLbTsJBQ26"" target="_blank">東京都千代田區外神田4-14-1</a>
-							<br>從東京Metro「秋葉原」站步行約4分鐘</br></font></b></h3></p>
+							<h3><b><font color="#a85538">餐飲店為主的商店街「AKIBA ICHI」集合有30多間店鋪。<br>從休閒咖啡廳和快餐店到日式、西式及異國風味的民族美食</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/FgsATKauLbTsJBQ26"target="_blank">東京都千代田區外神田4-14-1</a>
+							<br>從東京Metro「秋葉原」站步行約4分鐘</font></b></h3>
 							<p></p>
-							<p><h3><b><font color="#1a1d5a">營業時間: 11:00 - 23:00<br>（每週日和連假最後一天至22:00）</br></font></b></h3></p>
+							<h3><b><font color="#1a1d5a">營業時間: 11:00 - 23:00<br>（每週日和連假最後一天至22:00）</font></b></h3>
 						</div>
 				</div>
 		</section>
@@ -153,27 +178,205 @@
 					</div>
 						<div class="radiotext">
 							<h1>秋葉原無線電會館</h1>
-							<p><h3><b><font color="#a85538">重中之重，地上10層樓、地下2層樓<br>超過30家興趣嗜好、動畫、漫畫、遊戲、模型公仔</br></font></b></h3></p>
-							<p><h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/mxFtRPgfXtwSUfhZ7"" target="_blank">東京都千代田區外神田1-15-16</a>
-							<br>電氣街口步行即達</br></font></b></h3></p>
+							<h3><b><font color="#a85538">重中之重，地上10層樓、地下2層樓<br>超過30家興趣嗜好、動畫、漫畫、遊戲、模型公仔</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/mxFtRPgfXtwSUfhZ7" target="_blank">東京都千代田區外神田1-15-16</a>
+							<br>電氣街口步行即達</font></b></h3>
 							<p></p>
-							<p><h3><b><font color="#1a1d5a">營業時間 : 10:00 - 20:00<br>（B1F 12:00 - 22:00）</br></font></b></h3></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 10:00 - 20:00<br>（B1F 12:00 - 22:00）</font></b></h3>
 						</div>
 				</div>
 		</section>
 		
-		<section id="2k540" style="display:none;">
-				<div class="2k5401">
-					<div class="2k540p">
-						<img src="https://www.gotokyo.org/en/spot/240/images/main_450.webp" alt="2k540 AKI-OKA ARTISAN" />
+		<section id="akioka" style="display:none;">
+				<div class="akioka1">
+					<div class="akokap">
+						<img src="https://svcstrg.cld.navitime.jp/travelguide/p13090003/p13090003_01.jpg" alt="2k540 AKI-OKA ARTISAN" />
 					</div>
-						<div class="2k540text">
+						<div class="akiokatext">
 							<h1>2k540 AKI-OKA ARTISAN</h1>
-							<p><h3><b><font color="#a85538">JR「御徒町站」至「秋葉原站」之間的高架橋下<br>職人工作坊、室內裝飾品店、時裝店、畫廊、咖啡餐廳</br></font></b></h3></p>
-							<p><h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/kVj1Ugi8j9p1s74d8https:/maps.app.goo.gl/kVj1Ugi8j9p1s74d8"" target="_blank">東京都台東區上野5-9</a>
-							<br>電氣街口步行約6分鐘</br></font></b></h3></p>
+							<h3><b><font color="#a85538">JR「御徒町站」至「秋葉原站」之間的高架橋下<br>職人工作坊、室內裝飾品店、時裝店、畫廊、咖啡餐廳</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/kVj1Ugi8j9p1s74d8https:/maps.app.goo.gl/kVj1Ugi8j9p1s74d8"target="_blank">東京都台東區上野5-9</a>
+							<br>電氣街口步行約6分鐘</font></b></h3>
 							<p></p>
-							<p><h3><b><font color="#1a1d5a">營業時間 : 10:00 - 20:00<br>（B1F 12:00 - 22:00）</br></font></b></h3></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 11:00 - 19:00<br>（中通路開放時間10:00 - 20:30）</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="ydbs" style="display:none;">
+				<div class="ydbs1">
+					<div class="ydbsp">
+						<img src="https://static.gltjp.com/glt/data/directory/15000/14049/20221116_080912_d4c7ee15_w1920.webp" alt="Yodobashi Multimedia" />
+					</div>
+						<div class="ydbstext">
+							<h1>Yodobashi Multimedia</h1>
+							<h3><b><font color="#a85538">電器街秋葉原的複合家電設施「Yodobashi Akiba」內。<br>電腦周邊商品 電玩、鐵道模型、公仔、集換式卡片等</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/fBBA6YRdvEy7vYyf6"target="_blank">東京都千代田區神田花岡町1-1</a>
+							<br>「秋葉原」站直通</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 9:30 - 22:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="amt" style="display:none;">
+				<div class="amt1">
+					<div class="amtp">
+						<img src="https://p2.bahamut.com.tw/S/2KU/23/914bc501e53c373aeb0339d3391ktmb5.JPG" alt="Animate" />
+					</div>
+						<div class="amttext">
+							<h1>Animate（安利美特）</h1>
+							<h3><b><font color="#a85538">秋葉原店是日本規模最大的動畫、漫畫、遊戲專賣店。<br>1號館從地下1樓到7樓，共有8個樓層</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/JpsPjHEkyCpfUHxN8" target="_blank">東京都千代田區外神田4-3-1</a>
+							<br>電氣街口步行約4分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 11:00 - 21:00<br>（星期六、日、國定假日10:00 - 20:00）</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="mc" style="display:none;">
+				<div class="mc1">
+					<div class="mcp">
+						<img src="https://cn-tw.intheluggage.com/wp-content/uploads/sites/4/2016/01/top3-31-545x364.jpg" alt="MANDARAKE COMPLEX" />
+					</div>
+						<div class="mctext">
+							<h1>MANDARAKE COMPLEX</h1>
+							<h3><b><font color="#a85538">1樓到8樓全部都是賣場，昭和懷舊商品、同人誌、<br>逐格動畫、玩具商品、漫畫書籍、動畫周邊、遊戲、貼紙、卡牌等</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/T46snRHQmzQBSyAR9" target="_blank">東京都千代田區外神田3-11-12</a>
+							<br>電氣街口步行約4分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 12:00 - 20:00<br>（商品收購〜19:30）</br></font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="acz" style="display:none;">
+				<div class="acz1">
+					<div class="aczp">
+						<img src="https://www.akibacultureszone.com/_wp/wp-content/uploads/2023/09/IMG_0815-scaled.jpg" alt="AKIBA CULTURES ZONE" />
+					</div>
+						<div class="acztext">
+							<h1>AKIBA CULTURES ZONE</h1>
+							<h3><b><font color="#a85538">匯聚了偶像、動畫、女僕咖啡廳等<br>1樓至6樓聚集了模型、公仔、角色商品、漫畫、偶像周邊。</br></font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/PfShtDsVKv6ddons9" target="_blank">東京都千代田區外神田1-7-6</a>
+							<br>電氣街口步行約4分鐘</br></font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 :<br> 1-2樓：11:00-21:00；<br>3-4樓：11:00-20:30；<br>5樓：平日11:00-22:00 假日10:00-22:00；<br>6樓：11:00-20:30；</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="egg" style="display:none;">
+				<div class="egg1">
+					<div class="eggp">
+						<img src="https://tw.wamazing.com/media/wp-content/uploads/sites/4/2019/06/akiha_gacha03.jpg.webp" alt="秋葉原扭蛋會館" />
+					</div>
+						<div class="eggtext">
+							<h1>秋葉原扭蛋會館</h1>
+							<h3><b><font color="#a85538">多達500台扭蛋機</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/WfDoP4TSs5raNtfv6" target="_blank">東京都千代田區外神田3-15-5 MN大樓 1F</a>
+							<br>電氣街口步行約7分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 :<br>平日、星期六 11:00 - 20:00<br>星期日·國定假日 11:00 - 19:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="kby" style="display:none;">
+				<div class="kby1">
+					<div class="kbyp">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRf9b4PaF5HiMtBQp7kJ7T26CfBnoyxQ3zw&s" alt="壽屋秋葉原館" />
+					</div>
+						<div class="kbytext">
+							<h1>壽屋秋葉原館</h1>
+							<h3><b><font color="#a85538">製造販售公仔和塑膠模型的玩具製造商「壽屋」的直營店</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/NRHGV1svuyDvH9WP9" target="_blank">東京都千代田區外神田1-8-8</a>
+							<br>從JR「秋葉原」站步行約3分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 :全日：11:00 - 20:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="sof" style="display:none;">
+				<div class="sof1">
+					<div class="sofp">
+						<img src="https://image1.gamme.com.tw/news2/2021/53/22/rKCapqaWkKSZq6ibl54.jpg" alt="Sofmap AKIBA" />
+					</div>
+						<div class="softext">
+							<h1>Sofmap AKIBA</h1>
+							<h3><b><font color="#a85538">包括新品和二手電視遊戲機、電腦遊戲、動漫CD和藍光碟、公仔、模型等</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/zhhsfot3DtNYeFvK8" target="_blank">東京都千代田區外神田1-10-8 平岡大樓</a>
+							<br>從JR「秋葉原」站步行約3分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間 : 11:00 - 20:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="krn" style="display:none;">
+				<div class="krn1">
+					<div class="krnp">
+						<img src="https://i.pinimg.com/1200x/25/55/7b/25557b28fab968d286858957642afe29.jpg" alt="karinrena" />
+					</div>
+						<div class="krntext">
+							<h1>女僕咖啡廳</h1>
+							<h3><b><font color="#a85538">很多女僕咖啡廳。</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="mf" style="display:none;">
+				<div class="mf1">
+					<div class="mfp">
+						<img src="https://img.bigfang.tw/2023/01/1674820899-134ce63057f068a219a0df338fb0b723.jpg" alt="丸五" />
+					</div>
+						<div class="mftext">
+							<h1>丸五</h1>
+							<h3><b><font color="#a85538">炸豬排店，登上《米其林指南東京》的必比登推薦名單。<br>有點貴，</font></b></h3>
+							<h1><font color="#5f7f29">2200日圓up。</font></h1>
+							<h2><b><font color="#21532a"><a href="https://maps.app.goo.gl/1gkp6BZLdqrTMjTG9" target="_blank">菜單(26.01)</a></font></b></h2>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/QRusovLPZTUCjXM1A" target="_blank">東京都千代田區外神田1-8-14</a>
+							<br>電氣街口步行約4分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間:<br>午餐 11:30 - 15:00（L.O.14:00)<br>晚餐 17:00 - 21:00（L.O.20:00）<br>（一二公休)</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="sm" style="display:none;">
+				<div class="sm1">
+					<div class="smp">
+						<img src="https://i.ytimg.com/vi/6ifdjZKrFMA/sddefault.jpg" alt="肉汁麺ススム" />
+					</div>
+						<div class="smtext">
+							<h1>肉汁麺ススム</h1>
+							<h3><b><font color="#a85538">豬肉拉麵，肉和麵的份量都可調。</font></b></h3>
+							<h1><font color="#5f7f29">880~2280円</font></h1>
+							<h2><b><font color="#21532a"><a href="https://maps.app.goo.gl/NyyqSn1ANdknvhMd8" target="_blank">菜單(26.01)</a></font></b></h2>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/N4mF8cKkqZfHiVTs9" target="_blank">東京都千代田區外神田3-7-12</a>
+							<br>電氣街口步行約5分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間:11:00 - 21:00<br>(L.O. 20:40)</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="cj" style="display:none;">
+				<div class="cj1">
+					<div class="cjp">
+						<img src="https://static.gltjp.com/glt/data/directory/15000/14538/20230720_210447_8b967c7d_w1920.webp" alt="Carl’s Jr" />
+					</div>
+						<div class="cjtext">
+							<h1>Carl’s Jr</h1>
+							<h3><b><font color="#a85538">加州的漢堡餐廳，幾乎都牛肉。</font></b></h3>
+							<h1><font color="#5f7f29">雞肉漢堡單點740円</font></h1>
+							<h2><b><font color="#21532a"><a href="https://maps.app.goo.gl/DBX54XaXjkdNJRdw8" target="_blank">菜單(26.01)</a></font></b></h2>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/8Pi8GMMNvYhnTN5C7" target="_blank">東京都千代田區外神田4-4-3</a>
+							<br>從東京Metro銀座線「末廣町」站1號出口步行約2分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間:10:00 - 21:00<br>(L.O. 20:30)</font></b></h3>
 						</div>
 				</div>
 		</section>
