@@ -32,36 +32,45 @@
             }
         }
 
-        main {
-            padding: 2em;
-            min-height: 800px;
-			
-			.denkistr,.kanta1,.UDX1,.radio1,.akioka1,.ydbs1,.amt1,.mc1,.acz1,.egg1,.kby1,.sof1,.krn1,.mf1,.sm1,.cj1{
-          width: 1000px;
-          margin: 50px auto;
-          border:solid 1px gray;
-          overflow: hidden; /* 避免長方框下面顯示不正常 */
-        }
-        .denkip,.kantap,.UDXp,.radiop,.akokap,.ydbsp,.amtp,.mcp,.aczp,.eggp,.kbyp,.sofp,.krnp,.mfp,.smp,.cjp{
-          width: 400px;
-          float:right; 
-          padding: 20px;
-        }
-        .denkip img,.kantap img,.UDXp img,.radiop img,.akokap img,.ydbsp img,.amtp img,.mcp img,.aczp img,.eggp img,.kbyp img,.sofp img,.krnp img,.mfp img,.smp img,.cjp img{
-          display: block;
-          width:100%;
-        }
-        .denkitext,.kantatext,.UDXtext,.radiotext,.akiokatext,.ydbstext,.amttext,.mctext,.acztext,.eggtext,.kbytext,.softext,.krntext,.mftext,.smtext,cjtext{
-          float: left;  
-          width: 430px;
-          padding: 20px 20px 20px 20px;
-        }
-		article{
-		float:right;
-		border:100px;
-		height:1000px;
-		padding:auto;
-		}
+
+           main {
+  padding: 2em;
+  min-height: 800px;
+}
+
+/* ===== 共用卡片外框 ===== */
+.denkistr,.kanta1,.UDX1,.radio1,.akioka1,.ydbs1,.amt1,.mc1,.acz1,.egg1,.kby1,.sof1,.krn1,.mf1,.sm1,.cj1,.dog1,.pk1,.sky1,.skr1,.axsh1,.tr1,.ou1,.pc1{
+  max-width: 1000px;
+  margin: 50px auto;
+  border: solid 1px gray;
+  display: flex;
+  flex-direction: column; /* 手機：直排 */
+}
+
+/* ===== 圖片區 ===== */
+.denkip,.kantap,.UDXp,.radiop,.akokap,.ydbsp,.amtp,.mcp,.aczp,.eggp,.kbyp,.sofp,.krnp,.mfp,.smp,.cjp,.dogp,.pkp,.skyp,.skrp,.axshp,.trp,.oup,.pcp{
+  width: 100%;
+  padding: 20px;
+}
+
+.denkip img,.kantap img,.UDXp img,.radiop img,.akokap img,.ydbsp img,.amtp img,.mcp img,.aczp img,.eggp img,.kbyp img,.sofp img,.krnp img,.mfp img,.smp img,.cjp img,.dogp img,.pkp img,.skyp img,.skrp img,.axshp img,.trp img,.oup img,.pcp img{
+  width: 100%;
+  display: block;
+}
+
+/* ===== 文字區 ===== */
+.denkitext,.kantatext,.UDXtext,.radiotext,.akiokatext,.ydbstext,.amttext,.mctext,.acztext,.eggtext,.kbytext,.softext,.krntext,.mftext,.smtext,.cjtext,.dogtext,.pktext,.skytext,.skrtext,.axshtext,.trtext,.outext,.pctext{
+  width: 100%;
+  padding: 20px;
+}
+
+/* =========================
+   桌機版（兩欄）
+   ========================= */
+@media (min-width: 768px) {
+  .denkistr,.kanta1,.UDX1,.radio1,.akioka1,.ydbs1,.amt1,.mc1,.acz1,.egg1,.kby1,.sof1,.krn1,.mf1,.sm1,.cj1,.dog1,.pk1,.sky1,.skr1,.axsh1,.tr1,.ou1,.pc1{
+    flex-direction: row-reverse; /* 文字左、圖片右 */
+  }
         }
 
         
@@ -74,14 +83,14 @@
             <strong>東京</strong>
         </span>
         <nav>
-            <a href="#atoh">機場到住宿</a>
+            <a href="#atoh">交通方式</a>
             <a href="#akihabara">秋葉原</a>
-            <a href="#contact">連絡方式</a>
+            <a href="#shibuya">澀谷</a>
         </nav>
     </header>
     <main>
         <section id="atoh">
-            <h1><b>機場到住宿</b></h1>
+            <h1><b>交通方式</b></h1>
 		<ul type="circle">
 			<li><h2>skyliner > 山手線 > 走路</h2></li>
 				<ol type="1">
@@ -99,9 +108,164 @@
 		</ul>
         </section>
 		
+		<section id="shibuya" style="display:none;">
+            <h1>澀谷</h1>
+			 <ul>
+				<p><h1><b>餐廳</b></h1></p>
+				<li><h2><a href="#yk">澀谷橫丁</a></h2></li>
+				<li><h2><a href="#fs">魚べい</a></h2></li>
+				<li><h2><a href="#nk">挽肉と米</a></h2></li>
+				<li><h2><a href="#cc">Collaboration Café</a></h2></li>
+				
+            </ul>
+				
+            <ul>
+				<p><h1><b>景點</b></h1></p>
+                <li><h2><a href="#dog">八公銅像</a></h2></li>
+				<li><h2><a href="#pk">宮下公園</a></h2></li>
+				<li><h2><a href="#sky">SHIBUYA SKY</a></h2></li>
+				<li><h2><a href="#skr">Shibuya Sakura Stage</a></h2></li>
+				<li><h2><a href="#axsh">澀谷 AXSH</a></h2></li>
+				<li><h2><a href="#tr">TOWER RECORDS</a></h2></li>
+				<li><h2><a href="#ou">奧澀谷</a></h2></li>
+				<li><h2><a href="#pc">澀谷 PARCO</a></h2></li>
+				<li><h2><a href="#mg">澀谷 MEGA 唐吉軻德</a></h2></li>
+				<li><h2><a href="#fkr">澀谷 FUKURAS</a></h2></li>
+				<li><h2><a href="#109">SHIBUYA109</a></h2></li>
+				<li><h2><a href="#tty">SHIBUYA TSUTAYA</a></h2></li>
+            </ul>
+        </section>
+		
+		<section id="dog" style="display:none;">
+				<div class="dog1">
+					<div class="dogp">
+						<img src="https://d1grca2t3zpuug.cloudfront.net/2024/08/66bd67d95f7d5-870x500.webp" alt="八公銅像" />
+					</div>
+						<div class="dogtext">
+							<h1>八公銅像</h1>
+							<h3><b><font color="#a85538">八公銅像和旁邊的十字路口有名</font></b></h3>
+							<h3><b><font color="#21532a">自「渋谷」站「ハチ公改札」出口直達</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="pk" style="display:none;">
+				<div class="pk1">
+					<div class="pkp">
+						<img src="https://d1grca2t3zpuug.cloudfront.net/2021/08/miyashita-shop-430x250.jpg" alt="宮下公園" />
+					</div>
+						<div class="pktext">
+							<h1>宮下公園</h1>
+							<h3><b><font color="#a85538">有各式運動場及星巴克進駐,還能遠眺澀谷市區夜景<br>低樓層則為商業設施，是集商店、餐廳、咖啡館於一身的多功能休憩地。</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/FgSjxjCpDKNjjWK47"target="_blank">東京都渋谷区神宮前6-20-10</a>
+							<br>自「渋谷」站「B2」出口步行約3分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 公園8:00～23:00<br>商場11:00～20:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="sky" style="display:none;">
+				<div class="sky1">
+					<div class="skyp">
+						<img src="https://banbi.tw/wp-content/uploads/20200123223910_87.jpg" alt="SHIBUYA SKY" />
+					</div>
+						<div class="skytext">
+							<h1>SHIBUYA SKY</h1>
+							<h3><b><font color="#a85538">以無邊際的玻璃展望台而聞名<br>最人氣的時段則為黃昏傍晚，可以看到澀谷街燈亮起的瞬間</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/942z5urQQPiqALNY8"target="_blank">東京都渋谷区渋谷2-24-12</a>
+							<br>自「渋谷」站出口「B6」直通</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: B2～11F、14F 商場10:00～21:00<br>12F 餐廳11:00～23:00<br>13F 餐廳11:00～24:00<br>觀景台10:00～20:30</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="skr" style="display:none;">
+				<div class="skr1">
+					<div class="skrp">
+						<img src="https://d1grca2t3zpuug.cloudfront.net/2024/07/6699e5e9471ab-870x500.webp" alt="Shibuya Sakura Stage" />
+					</div>
+						<div class="skrtext">
+							<h1>Shibuya Sakura Stage</h1>
+							<h3><b><font color="#a85538">集結商辦、居住、娛樂三大機能的綜合商業設施<br>三麗鷗店鋪、美食廣場</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/KciY9Gr6ypxnJVQQ6"target="_blank">東京都渋谷区桜丘町123番</a>
+							<br>自「渋谷」站步行約5分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 10:00～21:00<br>（依店家而不同，詳情請洽官網確認）</font></b></h3>
+							<h3><b><font color="#1a1d5a"><a href="https://www.shibuya-sakura-stage.com/"target="_blank">官網</a></font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="axsh" style="display:none;">
+				<div class="axsh1">
+					<div class="axshp">
+						<img src="https://d1grca2t3zpuug.cloudfront.net/2024/08/66bd9426509bf-870x500.webp" alt="澀谷 AXSH" />
+					</div>
+						<div class="axshtext">
+							<h1>澀谷 AXSH</h1>
+							<h3><b><font color="#a85538">1～3樓是商業複合廣場，有飲食餐廳、藝術展演空間</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/7VeYYJjvgCdaiicq9"target="_blank">東京都渋谷区渋谷2-17-1</a>
+							<br>自東京地下鐵銀座線「渋谷」站步行約1分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 5:00～25:00<br>（依店家而不同，詳情請洽官網確認）</font></b></h3>
+							<h3><b><font color="#1a1d5a"><a href="https://www.shibuya-axsh.jp/"target="_blank">官網</a></font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="tr" style="display:none;">
+				<div class="tr1">
+					<div class="trp">
+						<img src="https://d1grca2t3zpuug.cloudfront.net/2024/08/66bda13a609fa-860x500.webp" alt="TOWER RECORDS" />
+					</div>
+						<div class="trtext">
+							<h1>TOWER RECORDS</h1>
+							<h3><b><font color="#a85538">1樓是所有最新發行的 JPOP 唱片區<br>2樓則是「TOWER RECORDS CAFE」，同步展示西洋音樂與藝術類的雜誌、書籍、寫真書等。</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/cSdgCQ18Y52UNM549"target="_blank">東京都渋谷区神南1-22-14</a>
+							<br>自「渋谷」站步行約5分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 11:00～22:00</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="ou" style="display:none;">
+				<div class="ou1">
+					<div class="oup">
+						<img src="https://d10pyp7ylo9bub.cloudfront.net/2018/02/okushibuya001-430x250.jpg" alt="奧澀谷" />
+					</div>
+						<div class="outext">
+							<h1>奧澀谷</h1>
+							<h3><b><font color="#a85538">寧靜街道中有許多質感咖啡廳、甜點舖、雜貨店進駐<br>咖啡館、葡式蛋塔、手工起司、藥局處方籤概念販售乾燥花的超文青花店</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/en8d2CBYpEfEyTKs7"target="_blank">東京都渋谷区富ヶ谷1-16-11(咖啡館)</a>
+							<br>「渋谷」站步行約15分鐘；東京地下鐵「代々木公園」站步行約5分鐘；小田急線「代々木八幡」站步行約8分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 各店不同</font></b></h3>
+						</div>
+				</div>
+		</section>
+		
+		<section id="pc" style="display:none;">
+				<div class="pc1">
+					<div class="pcp">
+						<img src="https://i0.wp.com/japanzerolag.com/wp-content/uploads/2024/01/shibuya-parco-top.jpg?resize=1024%2C683&ssl=1" alt="澀谷 PARCO" />
+					</div>
+						<div class="pctext">
+							<h1>澀谷 PARCO</h1>
+							<h3><b><font color="#a85538">任天堂旗艦店」、「寶可夢中心 Pokémon Center SHIBUYA」、「JUMP SHOP」、「刀劍亂舞」、「CAPCOM」實體店面等。</font></b></h3>
+							<h3><b><font color="#21532a"><a href="https://maps.app.goo.gl/zvBUAbtEtnUaZRQZ7"target="_blank">東京都渋谷宇田川町15-1</a>
+							<br>自「渋谷」站「A6-3」出口步行約3分鐘</font></b></h3>
+							<p></p>
+							<h3><b><font color="#1a1d5a">營業時間: 商場11:00～21:00<br>餐廳11:00～23:00<br>（部分店舖營業時間不同，請參考營業時間表）</font></b></h3>
+							<h3><b><font color="#1a1d5a"><a href="https://shibuya.parco.jp/pnews/detail/?id=31304"target="_blank">營業時間表</a></font></b></h3>
+						</div>
+				</div>
+		</section>
+		
         <section id="akihabara" style="display:none;">
             <h1>秋葉原</h1>
-			<article>
 			 <ul>
 				<p><h1><b>餐廳</b></h1></p>
 				<li><h2><a href="#krn">各種女僕咖啡廳</a></h2></li>
@@ -111,7 +275,6 @@
 				
             </ul>
 				
-			</article>
             <ul>
 				<p><h1><b>景點</b></h1></p>
                 <li><h2><a href="#denki">電器街</a></h2></li>
